@@ -1,18 +1,11 @@
 var city1 = {};
 
-city1.name = "city N";
-city1.population = 10 ** 7;
-city1.getName = function() {
-    return this.name;
-}
-city1.exportStr = function() {
-    return "name = " + this.name + "\npopulation = " + this.population + "\n";
-}
-
+city1.name = "GorodN";
+city1.population = 10000000;
 
 var city2 = {
-    "name": "city M",
-    "population": 10 ** 7,
+    "name": "GorodM",
+    "population": 10 ** 6,
     getName() {
         return this.name;
     },
@@ -20,6 +13,14 @@ var city2 = {
         return "name = " + this.name + "\npopulation = " + this.population + "\n";
     }
 };
+
+city1.getName = function() {
+    return this.name;
+}
+
+city1.exportStr = function() {
+    return "name = " + this.name + "\npopulation = " + this.population + "\n";
+}
 
 console.log(city1.exportStr())
 console.log(city2.exportStr())
